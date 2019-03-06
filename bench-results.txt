@@ -1,0 +1,86 @@
+---=== WordCollection benchmark ===---
+
+Implementation: ord-array-linear.h
+
+Reading dictionary.txt (inserting):
+2514 inserts in 420869775 nanoseconds (0.420870 seconds)
+
+Reading Books (searching):
+
+book: AliceWonderland.txt
+356 words found on 385 lines, 2664 words not found (total 3020)
+3020 searches in 3529492144 nanoseconds (3.529492 seconds)
+
+book: RulingPassion.txt
+510 words found on 619 lines, 4219 words not found (total 4729)
+4729 searches in 7466408767 nanoseconds (7.466409 seconds)
+
+book: DivineComedyDante.txt
+1754 words found on 2037 lines, 10402 words not found (total 12156)
+12156 searches in 21239162869 nanoseconds (21.239163 seconds)
+
+
+---=== WordCollection benchmark ===---
+
+Implementation: ord-linked-list.h
+
+Reading dictionary.txt (inserting):
+2514 inserts in 901179867 nanoseconds (0.901180 seconds)
+
+Reading Books (searching):
+
+book: AliceWonderland.txt
+356 words found on 385 lines, 2664 words not found (total 3020)
+3020 searches in 4361212304 nanoseconds (4.361212 seconds)
+
+book: RulingPassion.txt
+510 words found on 619 lines, 4219 words not found (total 4729)
+4729 searches in 8440971710 nanoseconds (8.440972 seconds)
+
+book: DivineComedyDante.txt
+1754 words found on 2037 lines, 10402 words not found (total 12156)
+12156 searches in 20536979131 nanoseconds (20.536979 seconds)
+
+
+---=== WordCollection benchmark ===---
+
+Implementation: ord-array-binary.h
+
+Reading dictionary.txt (inserting):
+2514 inserts in 1028452022 nanoseconds (1.028452 seconds)
+
+Reading Books (searching):
+
+book: AliceWonderland.txt
+356 words found on 385 lines, 2664 words not found (total 3020)
+3020 searches in 54228351 nanoseconds (0.054228 seconds)
+
+book: RulingPassion.txt
+510 words found on 619 lines, 4219 words not found (total 4729)
+4729 searches in 356748711 nanoseconds (0.356749 seconds)
+
+book: DivineComedyDante.txt
+1754 words found on 2037 lines, 10402 words not found (total 12156)
+12156 searches in 391007523 nanoseconds (0.391008 seconds)
+
+
+---=== WordCollection benchmark ===---
+
+Implementation: unbal-binary-search-tree.h
+
+Reading dictionary.txt (inserting):
+2514 inserts in 23644651 nanoseconds (0.023645 seconds)
+
+Reading Books (searching):
+
+book: AliceWonderland.txt
+356 words found on 385 lines, 2664 words not found (total 3020)
+3020 searches in 35171769 nanoseconds (0.035172 seconds)
+
+book: RulingPassion.txt
+510 words found on 619 lines, 4219 words not found (total 4729)
+4729 searches in 56090766 nanoseconds (0.056091 seconds)
+
+book: DivineComedyDante.txt
+1754 words found on 2037 lines, 10402 words not found (total 12156)
+12156 searches in 788021792 nanoseconds (0.788022 seconds)
