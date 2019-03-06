@@ -38,7 +38,6 @@ void FreeCollection(WordCollection *wc)
       free(wc->current);
       wc->current = wc->next;
    }
-
 }
 
 /*---------------------------------------------------------------------------*/
@@ -55,7 +54,7 @@ int AddCollection(WordCollection *wc, const char *c)
    wc->current = wc->head;
    wc->prev = NULL;
 
-   while ( (wc->current != NULL) && (strcmp(wc->current->word, c) < 0))
+   while ((wc->current != NULL) && (strcmp(wc->current->word, c) < 0))
    {
       wc->prev = wc->current;
       wc->current = wc->current->next;

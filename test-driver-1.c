@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#ifndef WORDCOLL_HEADER 
+#ifndef WORDCOLL_HEADER
 #error WORDCOLL_HEADER must be defined with the name of a suitable header file
 #else
 #include WORDCOLL_HEADER
@@ -16,8 +16,8 @@ int main(void)
 {
    WordCollection names;
 
-   const char * name[] = { "Peter", "Sathish", "Wade", "Don", "Indrajit",
-                           "Rahul", "Sam", "Kevin", NULL };
+   const char *name[] = {"Peter", "Sathish", "Wade", "Don", "Indrajit",
+                         "Rahul", "Sam", "Kevin", NULL};
 
    int i;
 
@@ -28,7 +28,7 @@ int main(void)
       fprintf(stderr, "Unable to initialise WordCollection\n");
       return EXIT_FAILURE;
    }
- 
+
    i = 0;
 
    while (name[i])
@@ -44,7 +44,7 @@ int main(void)
    printf("Collection contains %d names\n", SizeCollection(&names));
 
    printf("The following names are in the Collection:\n");
-  
+
    DisplayCollection(&names);
 
    printf("\nSearching for \"Sathish\": ");
@@ -54,5 +54,4 @@ int main(void)
    FreeCollection(&names);
 
    return EXIT_SUCCESS;
-  
-} 
+}

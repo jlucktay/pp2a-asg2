@@ -106,8 +106,7 @@ partE: unbal-binary-search-tree.o test-driver-1-pE.o
 	$(CC) -o unbal-binary-search-tree unbal-binary-search-tree.o \
 	test-driver-1-pE.o
 
-unbal-binary-search-tree.o: unbal-binary-search-tree.c \
-									 unbal-binary-search-tree.h
+unbal-binary-search-tree.o: unbal-binary-search-tree.c unbal-binary-search-tree.h
 	$(CC) $(FLAGS) -c unbal-binary-search-tree.c
 
 test-driver-1-pE.o: test-driver-1.c unbal-binary-search-tree.h

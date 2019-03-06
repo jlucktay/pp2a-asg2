@@ -25,13 +25,13 @@ typedef struct
  * a parameter, up to a size defined by WCSIZE, with NULL entries. It returns
  * SUCCESS upon successful completion.
  */
-int MakeCollection(WordCollection*);
+int MakeCollection(WordCollection *);
 
 /*
  * FreeCollection frees the memory dynamically allocated to the WordCollection
  * parameter.
  */
-void FreeCollection(WordCollection*);
+void FreeCollection(WordCollection *);
 
 /*
  * AddCollection adds the string, given by the second parameter, to the
@@ -41,7 +41,7 @@ void FreeCollection(WordCollection*);
  * memory. The string is added so that the WordCollection is in alphabetical
  * order.
  */
-int AddCollection(WordCollection*, const char*);
+int AddCollection(WordCollection *, const char *);
 
 /*
  * SearchCollection searches for the string, given by the second parameter, in
@@ -49,16 +49,16 @@ int AddCollection(WordCollection*, const char*);
  * search algorithm, and returns SUCCESS or FAILURE depending upon the outcome
  * of the search.
  */
-int SearchCollection(WordCollection*, const char*);
+int SearchCollection(WordCollection *, const char *);
 
 /*
  * SizeCollection returns the number of words in the WordCollection given as
  * the parameter.
  */
-int SizeCollection(WordCollection*);
+int SizeCollection(WordCollection *);
 
 /*
  * DisplayCollection prints the contents of the WordCollection given as the
  * parameter to standard output.
  */
-void DisplayCollection(WordCollection*);
+void DisplayCollection(WordCollection *);

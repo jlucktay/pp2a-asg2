@@ -51,9 +51,9 @@ int AddCollection(WordCollection *wc, const char *c)
 {
    int i = wc->size;
 
-   while (i > 0 && strcmp(wc->words[i-1], c) > 0)
+   while (i > 0 && strcmp(wc->words[i - 1], c) > 0)
    {
-      wc->words[i] = wc->words[i-1];
+      wc->words[i] = wc->words[i - 1];
       i--;
    }
 

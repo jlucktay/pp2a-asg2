@@ -34,20 +34,20 @@ typedef struct
  * a parameter, with one initial NULL entry. It returns SUCCESS upon
  * successful completion.
  */
-int MakeCollection(WordCollection*);
+int MakeCollection(WordCollection *);
 
 /*
  * FreeCollection frees the memory dynamically allocated to the WordCollection
  * parameter, utilising the recursive function PostOrderFree.
  */
-void FreeCollection(WordCollection*);
+void FreeCollection(WordCollection *);
 
 /*
  * AddCollection adds the string, given by the second parameter, to the
  * WordCollection given by the first parameter. It returns SUCCESS or FAILURE,
  * depending on the outcome of the dynamic allocation of memory.
  */
-int AddCollection(WordCollection*, const char*);
+int AddCollection(WordCollection *, const char *);
 
 /*
  * SearchCollection searches for the string, given by the second parameter, in
@@ -56,19 +56,19 @@ int AddCollection(WordCollection*, const char*);
  * based around), and returns SUCCESS or FAILURE depending upon the outcome of
  * the search.
  */
-int SearchCollection(WordCollection*, const char*);
+int SearchCollection(WordCollection *, const char *);
 
 /*
  * SizeCollection returns the number of words in the WordCollection given as
  * the parameter.
  */
-int SizeCollection(WordCollection*);
+int SizeCollection(WordCollection *);
 
 /*
  * DisplayCollection prints the contents of the WordCollection given as the
  * parameter to standard output, utilising the recursive function DisplayBst.
  */
-void DisplayCollection(WordCollection*);
+void DisplayCollection(WordCollection *);
 
 /*
  * PostOrderFree is a recursive function that frees the memory dynamically

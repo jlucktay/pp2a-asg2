@@ -51,9 +51,9 @@ int AddCollection(WordCollection *wc, const char *c)
 {
    int i = wc->size;
 
-   while (i > 0 && strcmp(wc->words[i-1], c) > 0)
+   while (i > 0 && strcmp(wc->words[i - 1], c) > 0)
    {
-      wc->words[i] = wc->words[i-1];
+      wc->words[i] = wc->words[i - 1];
       i--;
    }
 
@@ -76,8 +76,8 @@ int SearchCollection(WordCollection *wc, const char *c)
 {
    const char **key;
 
-   if ((key = (char const **) bsearch(c, wc->words, SizeCollection(wc),
-      sizeof(char *), StrCmpWrap)))
+   if ((key = (char const **)bsearch(c, wc->words, SizeCollection(wc),
+                                     sizeof(char *), StrCmpWrap)))
    {
       return SUCCESS;
    }
@@ -110,8 +110,8 @@ void DisplayCollection(WordCollection *wc)
 
 int StrCmpWrap(const void *target, const void *compareTo)
 {
-   const char *ptrTarget = (const char *) target;
-   const char **ptrCompareTo = (const char **) compareTo;
+   const char *ptrTarget = (const char *)target;
+   const char **ptrCompareTo = (const char **)compareTo;
 
    return (strcmp(ptrTarget, *ptrCompareTo));
 }

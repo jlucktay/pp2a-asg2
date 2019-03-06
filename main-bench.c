@@ -35,7 +35,7 @@
 #define INPUT2 "RulingPassion.txt"
 #define INPUT3 "DivineComedyDante.txt"
 
-int bench(char*, WordCollection*);
+int bench(char *, WordCollection *);
 
 /*---------------------------------------------------------------------------*/
 
@@ -84,13 +84,13 @@ int main(void)
       }
    }
 
-   stopTime = gethrtime();  /* timing ends here */
+   stopTime = gethrtime(); /* timing ends here */
 
    fclose(fp);
    final = stopTime - startTime;
 
    printf("%d inserts in %lld nanoseconds (%lf seconds)\n\n",
-      SizeCollection(&wordcol), final, (double)final/1e9);
+          SizeCollection(&wordcol), final, (double)final / 1e9);
 
    printf("Reading Books (searching):\n\n");
 
@@ -107,7 +107,7 @@ int main(void)
 
 int bench(char *input, WordCollection *wc)
 {
-   char *strPtr, *delim = { " \t\n!@#$%^*()_+-={}[]|;:',/<>?`~\"." };
+   char *strPtr, *delim = {" \t\n!@#$%^*()_+-={}[]|;:',/<>?`~\"."};
    char line[LINESIZE], chompLine[LINESIZE];
    FILE *fp;
    hrtime_t startTime, stopTime, final;
@@ -156,15 +156,15 @@ int bench(char *input, WordCollection *wc)
       lineTotal++;
    }
 
-   stopTime = gethrtime();  /* timing ends here */
+   stopTime = gethrtime(); /* timing ends here */
 
    fclose(fp);
    final = stopTime - startTime;
 
    printf("%d words found on %d lines, %d words not found (total %d)\n",
-      found, lineTotal, notFound, wordTotal);
+          found, lineTotal, notFound, wordTotal);
    printf("%d searches in %lld nanoseconds (%lf seconds)\n\n", wordTotal,
-      final, (double)final/1e9);
+          final, (double)final / 1e9);
 
    return SUCCESS;
 }
