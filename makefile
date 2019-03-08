@@ -112,3 +112,19 @@ unbal-binary-search-tree.o: unbal-binary-search-tree.c unbal-binary-search-tree.
 test-driver-1-pE.o: test-driver-1.c unbal-binary-search-tree.h
 	$(CC) $(FLAGS) -c -o test-driver-1-pE.o \
 	-DWORDCOLL_HEADER=\"unbal-binary-search-tree.h\" test-driver-1.c
+
+
+
+# Miscellaneous
+#
+
+clean:
+	@rm -fv \
+		bench-ord-array-binary \
+		bench-ord-array-linear \
+		bench-ord-linked-list \
+		bench-unbal-binary-search-tree \
+		ord-array-binary \
+		ord-array-linear \
+		ord-linked-list \
+		unbal-binary-search-tree \
