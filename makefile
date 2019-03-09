@@ -128,3 +128,4 @@ clean:
 		ord-array-linear \
 		ord-linked-list \
 		unbal-binary-search-tree \
+		*.o
